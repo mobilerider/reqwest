@@ -4,11 +4,8 @@
   * https://github.com/ded/reqwest
   */
 
-!function (name, context, definition) {
-  if (typeof module != 'undefined' && module.exports) module.exports = definition()
-  else if (typeof define == 'function' && define.amd) define(definition)
-  else context[name] = definition()
-}('reqwest', this, function () {
+;
+var Requests = (function (undefined) {
 
   var win = window
     , doc = document
@@ -612,4 +609,4 @@
   }
 
   return reqwest
-});
+})();
